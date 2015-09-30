@@ -1,0 +1,204 @@
+{
+  "status": {
+    "success": true
+  },
+  "data": {
+    "blog.shareaholic.com": {
+      "spc": {
+        "1431043200": {
+          "gross_revenue": 0,
+          "view_impressions": 613,
+          "cpm": 0,
+          "ctr": 0,
+          "pub_revenue": 0,
+          "impressions": 2531,
+          "clicks": 0
+        },
+        "1431129600": {
+          "gross_revenue": 1.01,
+          "view_impressions": 576,
+          "cpm": 0.22,
+          "ctr": 0.0024,
+          "pub_revenue": 0.36,
+          "impressions": 1673,
+          "clicks": 4
+        },
+        "1431216000": {
+          "gross_revenue": 0.2,
+          "view_impressions": 419,
+          "cpm": 0.05,
+          "ctr": 0.0007,
+          "pub_revenue": 0.07,
+          "impressions": 1429,
+          "clicks": 1
+        },
+        "1431302400": {
+          "gross_revenue": 0,
+          "view_impressions": 728,
+          "cpm": 0,
+          "ctr": 0,
+          "pub_revenue": 0,
+          "impressions": 2439,
+          "clicks": 0
+        },
+        "1431388800": {
+          "gross_revenue": 0,
+          "view_impressions": 992,
+          "cpm": 0,
+          "ctr": 0,
+          "pub_revenue": 0,
+          "impressions": 3372,
+          "clicks": 0
+        },
+        "1431475200": {
+          "gross_revenue": 0.35,
+          "view_impressions": 893,
+          "cpm": 0.04,
+          "ctr": 0.0003,
+          "pub_revenue": 0.12,
+          "impressions": 3212,
+          "clicks": 1
+        },
+        "1431561600": {
+          "gross_revenue": 0.34,
+          "view_impressions": 695,
+          "cpm": 0.06,
+          "ctr": 0.0009,
+          "pub_revenue": 0.12,
+          "impressions": 2202,
+          "clicks": 2
+        }
+      },
+      "display": {
+        "1431043200": {
+          "gross_revenue": 0.05,
+          "view_impressions": 0,
+          "cpm": 0.36,
+          "ctr": 0,
+          "pub_revenue": 0.02,
+          "impressions": 48,
+          "clicks": 0
+        },
+        "1431129600": {
+          "gross_revenue": 0.05,
+          "view_impressions": 0,
+          "cpm": 0.36,
+          "ctr": 0,
+          "pub_revenue": 0.02,
+          "impressions": 51,
+          "clicks": 0
+        },
+        "1431216000": {
+          "gross_revenue": 0.1,
+          "view_impressions": 0,
+          "cpm": 0.36,
+          "ctr": 0,
+          "pub_revenue": 0.04,
+          "impressions": 100,
+          "clicks": 0
+        },
+        "1431302400": {
+          "gross_revenue": 0.13,
+          "view_impressions": 0,
+          "cpm": 0.36,
+          "ctr": 0,
+          "pub_revenue": 0.04,
+          "impressions": 126,
+          "clicks": 0
+        },
+        "1431388800": {
+          "gross_revenue": 0.14,
+          "view_impressions": 0,
+          "cpm": 0.36,
+          "ctr": 0,
+          "pub_revenue": 0.05,
+          "impressions": 142,
+          "clicks": 0
+        },
+        "1431475200": {
+          "gross_revenue": 0.09,
+          "view_impressions": 0,
+          "cpm": 0.36,
+          "ctr": 0,
+          "pub_revenue": 0.03,
+          "impressions": 88,
+          "clicks": 0
+        },
+        "1431561600": {
+          "gross_revenue": 0.06,
+          "view_impressions": 0,
+          "cpm": 0.36,
+          "ctr": 0,
+          "pub_revenue": 0.02,
+          "impressions": 56,
+          "clicks": 0
+        }
+      },
+      "rc": {
+        "1431043200": {
+          "gross_revenue": 0,
+          "view_impressions": 0,
+          "cpm": 0,
+          "ctr": 0.004,
+          "pub_revenue": 0,
+          "impressions": 4272,
+          "clicks": 17
+        },
+        "1431129600": {
+          "gross_revenue": 0,
+          "view_impressions": 0,
+          "cpm": 0,
+          "ctr": 0.0011,
+          "pub_revenue": 0,
+          "impressions": 3637,
+          "clicks": 4
+        },
+        "1431216000": {
+          "gross_revenue": 0,
+          "view_impressions": 0,
+          "cpm": 0,
+          "ctr": 0.0015,
+          "pub_revenue": 0,
+          "impressions": 3383,
+          "clicks": 5
+        },
+        "1431302400": {
+          "gross_revenue": 0,
+          "view_impressions": 0,
+          "cpm": 0,
+          "ctr": 0.0016,
+          "pub_revenue": 0,
+          "impressions": 4938,
+          "clicks": 8
+        },
+        "1431388800": {
+          "gross_revenue": 0,
+          "view_impressions": 0,
+          "cpm": 0,
+          "ctr": 0.0006,
+          "pub_revenue": 0,
+          "impressions": 4846,
+          "clicks": 3
+        },
+        "1431475200": {
+          "gross_revenue": 0,
+          "view_impressions": 0,
+          "cpm": 0,
+          "ctr": 0.0026,
+          "pub_revenue": 0,
+          "impressions": 5061,
+          "clicks": 13
+        },
+        "1431561600": {
+          "gross_revenue": 0,
+          "view_impressions": 0,
+          "cpm": 0,
+          "ctr": 0.0017,
+          "pub_revenue": 0,
+          "impressions": 5398,
+          "clicks": 9
+        }
+      }
+    }
+  }
+}

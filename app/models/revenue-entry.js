@@ -8,7 +8,8 @@ var RevenueEntry = AmpModel.extend({
     ctr: 'number',
     pub_revenue: 'number',
     impressions: 'number',
-    clicks: 'number'
+    clicks: 'number',
+    timestamp: 'number'
   }
 });
 

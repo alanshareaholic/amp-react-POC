@@ -1,3 +1,10 @@
 import React from 'react';
 import App from './components/app.js';
-React.renderComponent(<App/>, document.body);
+
+import Fetcher from './fetchers/revenue-fetcher.js';
+
+React.render(<App/>, document.getElementById('app'));
+
+Fetcher.fetchData().then(function(collection){
+  console.log(collection.toJson());
+});

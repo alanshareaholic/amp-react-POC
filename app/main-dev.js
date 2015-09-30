@@ -5,5 +5,13 @@ import React from 'react';
 window.React = React;
 
 import App from './components/app.js';
+import Fetcher from './fetchers/revenue-fetcher.js';
+
 
 React.render(<App/>, document.getElementById('app'));
+
+let inst = new Fetcher();
+
+inst.fetchData().then(collection => {
+  console.log(collection.toJSON());
+});

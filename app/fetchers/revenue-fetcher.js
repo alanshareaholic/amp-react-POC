@@ -1,26 +1,36 @@
 import rest from 'rest';
-import RevenueEntries from '/collections/revenue-entires';
+import mime from 'rest/interceptor/mime';
+import RevenueEntries from '../collections/revenue-entires.js';
 
-const revenueURL = 'http://reporting.prod.shareaholic.com/publisher_revenue?domain=blog.shareaholic.com&start=1431043200&end=1431561600&interval=d&cid=spc,rc,display';
+const http = rest.wrap(mime);
+
+//const revenueURL = 'http://reporting.prod.shareaholic.com/publisher_revenue?domain=blog.shareaholic.com&start=1431043200&end=1431561600&interval=d&cid=spc,rc,display';
+const revenueURL = 'http://localhost:3334/rev.json';
 
 
 class RevenueFetcher{
 
   fetchData(){
-    return rest(revenueUrl).then(this.parseData);
+    return http(revenueURL).then(data => this.parseData(data.entity.data));
   }
 
   parseData(data){
-    let base = data.data;
     let ret = {};
+    let revenueEntires = new RevenueEntries();
 
     for(let site in data){
-      let {spc, display, rc} = site;
+      let {spc, display, rc} = data[site];
 
       if(spc){
-
+        for(let timestamp in spc){
+          let model = spc[timestamp];
+          model.timestamp = Number(timestamp);
+          revenueEntires.add(model);
+        }
       }
     }
+
+    return revenueEntires;
   }
 
 }
