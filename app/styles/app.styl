@@ -11,9 +11,46 @@ header
   .table-header
     background blue
     .table-cell-text
-      color green
+      color white
   .table-cell
     background gray
     .table-cell-text
       color #00D8FF
 
+
+.modal
+  width 400px
+  height 500px
+  border-radius 5px
+  box-shadow 6px 9px 47px -5px rgba(0,0,0,0.75)
+  position absolute
+  top calc(50% - 200px)
+  left calc(50% - 250px)
+  z-index 99999
+
+  .close-modal
+    &:after
+      content "X"
+      width 20px
+      height 20px
+      border-radius 20px
+      background red
+      color white
+      position relative
+      top 0
+      left 365px
+
+  &.modal-enter
+    opacity 0.01
+
+
+  &.modal-enter.modal-enter-active
+    opacity 1
+    transition opacity .5s ease-in
+
+  &.modal-leave
+    opacity 1
+
+  &.modal-leave.modal-leave-active
+    opacity 0.01
+    transition opacity .5s ease-in
