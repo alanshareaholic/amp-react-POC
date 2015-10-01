@@ -8,8 +8,17 @@ var babelify = require('babelify');
 var source = require('vinyl-source-stream');
 var buffer = require('vinyl-buffer');
 var stylish = require('jshint-stylish');
+var stylus = require('gulp-stylus');
+var concat = require('gulp-concat');
 
 
+function compileStyles(){
+  console.log('recompiling styles...');
+  return gulp.src('./app/styles/*.styl')
+    .pipe(stylus())
+    .pipe(concat('app.css'))
+    .pipe(gulp.dest('./app/build/'));
+}
 
 gulp.task('lint', function(){
   return gulp.src('./app/**/*.js')
@@ -65,14 +74,11 @@ gulp.task('browserify-prod', ['lint'], function() {
     .pipe(gulp.dest('./app/build/'));
 });
 
+gulp.task('styles', compileStyles);
 
-//gulp.task('css', function () {
-//    gulp.watch('styles/**/*.css', function () {
-//        return gulp.src('styles/**/*.css')
-//        .pipe(concat('main.css'))
-//        .pipe(gulp.dest('build/'));
-//    });
-//});
+gulp.task('watch-assets', function () {
+    gulp.watch('./app/styles/*.styl', compileStyles);
+});
 
-gulp.task('dev', ['browserify-dev', 'serve']);
-gulp.task('build', ['browserify-prod']);
+gulp.task('dev', ['browserify-dev', 'serve', 'watch-assets']);
+gulp.task('build', ['browserify-prod', 'styles']);
