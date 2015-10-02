@@ -4,6 +4,16 @@ import React from 'react';
 // DEV-TOOLS does not display
 window.React = React;
 
-import App from './components/app.js';
+import Router from './router.js';
+import App from 'ampersand-app';
 
-React.render(<App/>, document.getElementById('app'));
+window.app = App.extend({
+  init(){
+    this.router = new Router();
+    this.router.history.start();
+  }
+});
+
+app.init();
+
+

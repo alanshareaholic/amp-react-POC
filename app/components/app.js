@@ -3,6 +3,8 @@ import Header from './header.js';
 import Table from './table/table.js';
 import Fetcher from '../fetchers/revenue-fetcher.js';
 import Modal from './modal.js';
+import app from 'ampersand-app';
+import localLinks from 'local-links';
 
 import addons from 'react/addons';
 
@@ -38,9 +40,17 @@ class App extends React.Component{
     this.setState({modalOpen: false});
   }
 
+  handleRoute(event){
+    let pathname = localLinks.getLocalPathname(event);
+    if (pathname) {
+      event.preventDefault();
+      app.router.history.navigate(pathname, { trigger: true });
+    }
+  }
+
   render() {
     return (
-      <div className="container">
+      <div className="container" onClick={this.handleRoute.bind(this)}>
         <Header/>
         {this.state.modalOpen ?
           <ReactCSSTransitionGroup transitionName="modal" transitionAppear={true}>
@@ -51,6 +61,7 @@ class App extends React.Component{
           : <ReactCSSTransitionGroup transitionName="modal"/>}
         <Table headers={this.state.headers} rows={this.state.rows}/>
         <button onClick={this.showModal.bind(this)}>Show Modal</button>
+        <a href='/test'>Go To Test</a>
       </div>
     );
   }

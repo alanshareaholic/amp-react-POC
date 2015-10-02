@@ -60,7 +60,7 @@ gulp.task('browserify-dev', ['lint'], function() {
 
 gulp.task('browserify-prod', ['lint'], function() {
     return browserify({
-        entries: ['./app/main.js'],
+        entries: ['./app/main-dev.js'],
         transform: [babelify.configure({compact: false, nonStandard: true})],
         debug: true,
         cache: {},
