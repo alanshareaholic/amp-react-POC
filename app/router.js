@@ -11,7 +11,7 @@ let router = Router.extend({
 
   routes: {
     '': 'home',
-    'test': 'err404'
+    'test(/)': 'err404'
   },
 
   home(){
@@ -21,7 +21,6 @@ let router = Router.extend({
   err404(){
     this.renderPage(<Err404/>);
   }
-
 
 });
 
