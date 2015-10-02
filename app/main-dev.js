@@ -7,13 +7,12 @@ window.React = React;
 import Router from './router.js';
 import App from 'ampersand-app';
 
-window.app = App.extend({
+App.extend({
   init(){
     this.router = new Router();
     this.router.history.start();
   }
-});
+}).init();
 
-app.init();
 
 
